@@ -7,11 +7,13 @@ class AnotacaoesController {
 
     addAnotacao() {
 
-        let teste = new AnotacaoModel(this.arr)
+        let model = new AnotacaoModel(this.arr)
 
-        console.log(teste.valorAdicionar($('#escreve').val()))
+        let view = new AnotacaoView()
 
+        view.renderizaAnotacao(model.valorAdicionar($('#escreve').val()))
     }
+
 
 
 

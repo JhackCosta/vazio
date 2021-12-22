@@ -7,9 +7,13 @@ class AnotacaoModel {
 
     valorAdicionar(iten) {
 
-        this.valor.push(iten)
+        const Anotacao = {
+            titulo: iten
+        }
 
-        return this.valor
+        this.valor.push(Anotacao)
+
+        return Anotacao
 
     }
 
